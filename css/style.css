@@ -31,6 +31,9 @@ ul {
     background-color: rgba(255, 255, 255, 0.3);
     color: white;
 }
+.navbuttoncontainer {
+    text-align: right;
+}
 .logocontainer {
     position: relative;
     display: inline-block;
@@ -45,8 +48,9 @@ ul {
 }
 .logo {
     display: inline-block;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
 }
 /* Logo animation */
 .faded, .d1, .d2, .d3 {
@@ -105,7 +109,7 @@ ul {
 .layer1, .layer2, .layer3 {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 200%;
     top: 0;
     left: 0;
     background-repeat: repeat;
@@ -125,41 +129,3 @@ ul {
 }
 
 /* Info */
-
-.para {
-    margin-top: 500px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.para1, .para2 {
-    height: 400px;
-    position: relative;
-}
-.para1 {
-    background-color: rgba(28, 28, 28, 1);
-}
-
-.para2 {
-    background-color: rgba(16, 16, 16, 1);
-}
-.para ul {
-    text-align: center;
-}
-.para li {
-    margin-top: 25px;
-    display: inline-block;
-    height: 350px;
-}
-.para p {
-    color: white;
-    font-family: "PT Sans";
-    font-size: 22px;
-    width: 40%;
-    margin: 0 auto;
-}
-.para1 p, para2 img {
-    float: right;
-}
-.para2 p, para1 img {
-    float: left;
-}
