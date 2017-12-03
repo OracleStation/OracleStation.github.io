@@ -66,6 +66,7 @@ ul {
 }
 .textlogo {
     margin-top: 60px;
+    float: left;
 }
 /* Logo animation */
 .faded, .d1, .d2, .d3 {
