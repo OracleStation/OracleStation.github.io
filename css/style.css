@@ -43,7 +43,7 @@ ul {
     color: white;
 }
 .navbuttoncontainer {
-    text-align: right;
+    float: right;
 }
 
 /* Logos and Ship */
