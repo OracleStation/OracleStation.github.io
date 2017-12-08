@@ -2,78 +2,84 @@ body {
     margin: 0;
     padding: 0;
 }
-
-a {
-    position: relative;
-    color: #ffffff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 60px;
-    z-index: 100;
+p, h1 {
+    font-family: 'PT Sans Narrow';
+    color: lightgray;
 }
 .navbar {
     position: fixed;
     background: repeating-linear-gradient(
         135deg,
-        #191919,
-        #191919 10px,
+        #252525,
+        #252525 10px,
         #121212 10px,
         #121212 20px
     );
     width: 100%;
-    height: 60px;
+    height: 3em;
     top: 0;
     left: 0;
     z-index: 50;
 }
-ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-}
-.navbutton {
-    display: inline-block;
-    width: 100px;
-    height: 60px;
-}
-.navbutton:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: white;
-}
-.navbuttoncontainer {
+    padding: 0 3em 0;
+    display: flex;
+    top: 0;
     float: right;
 }
-
+.navbar li {
+    text-align: center;
+    width: 4em;
+    height: 3em;
+    color: #ffffff;
+    background-color: #121212;
+    display: inline-block;
+    padding: 0 1em 0;
+    line-height: 3em;
+}
+.navbar li:hover {
+    background-color: #252525;
+}
+.navbar a {
+    text-decoration: none;
+    font-family: 'PT Sans Narrow';
+    font-size: 1em;
+    float: left;
+}
 /* Logos and Ship */
 .logocontainer {
-    display: inline-block;
-    position: relative;
-    display: inline-block;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    background-color: rgba(16, 16, 16, 1);
-    margin-left: 30px;
-    text-align: center;
     float: left;
+    border-radius: 50%;
+    height: 8em;
+    width: 8em;
+    background-color: rgba(16, 16, 16, 1);
+    margin-left: 1.5em;
     z-index: 2;
 }
-.logo {
-    height: 100px;
-    margin-top: 10px;
+.logocontainer img {
+    width: inherit;
+    height: inherit;
 }
 .textlogo {
-    margin-top: 60px;
-    float: left;
+    text-align: justify
+}
+.textlogo h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 4.5em 0;
+    font-family: 'Press Start 2P';
+    font-size: 2em;
+    color: #ffffff;
 }
 /* Logo animation */
-.faded, .d1, .d2, .d3 {
-    -webkit-animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -ms-animation: fadein 1s;
-    animation: fadein 1s;
+.faded, .d1 {
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -ms-animation: fadein 3s;
+    animation: fadein 3s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -81,24 +87,10 @@ ul {
 }
 .d1{
     opacity: 0;
-    animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -ms-animation: 1s;
-}
-.d2{
-    opacity: 0;
-    animation-delay: 1.3s;
-    -webkit-animation-delay: 1.3s;
-    -moz-animation-delay: 1.3s;
-    -ms-animation: 1.3s;
-}
-.d3{
-    opacity: 0;
-    animation-delay: 1.6s;
-    -webkit-animation-delay: 1.6s;
-    -moz-animation-delay: 1.6s;
-    -ms-animation: 1.6s;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation: 2s;
 }
 @keyframes fadein {
     from { opacity: 0; }
@@ -145,44 +137,20 @@ ul {
 }
 
 /* Info */
-.para {
-    margin-top: 500px;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 10%;
-    z-index: 50;
+.panelcontainer {
+    display: grid;
+    margin-top: 450px;
+    margin-bottom: 70px;
+    grid-template-columns: 10% 300px 10px auto 10%;
+    grid-template-rows: 700px;
 }
-.para1, .para2 {
-    height: 400px;
-    position: relative;
+.twitter {
+    background-color: #f4f7f9;
+    grid-column-start: 2;
+    grid-column-end: 2;
 }
-.para1 {
-    background-color: rgba(255, 255, 255, 1);
-}
-.para2 {
-    background-color: rgba(235, 235, 235, 1);
-}
-.para1 p, .para2 img {
-    float: right;
-    text-align: right;
-}
-.para2 p, .para1 img {
-    float: left;
-    text-align: left;
-    padding-left: 25px;
-}
-.para p {
-    color: rgba(50, 50, 50, 1);
-    font-family: 'Roboto Condensed';
-    font-size: 18px;
-    word-wrap: break-word;
-    width: 550px;
-}
-.para ul {
-    text-align: center;
-}
-.para li {
-    margin-top: 25px;
-    display: inline-block;
-    height: 350px;
+.infopanels {
+    background-color: #f4f7f9;
+    grid-column-start: 4;
+    grid-column-end: 4;
 }
