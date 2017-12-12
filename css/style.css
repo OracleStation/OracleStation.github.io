@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
 }
-p, h1 {
+p,
+h1 {
     font-family: 'PT Sans Narrow';
     color: lightgray;
 }
@@ -75,7 +76,8 @@ p, h1 {
     color: #ffffff;
 }
 /* Logo animation */
-.faded, .d1 {
+.faded,
+.d1 {
     -webkit-animation: fadein 3s;
     -moz-animation: fadein 3s;
     -ms-animation: fadein 3s;
@@ -141,7 +143,7 @@ p, h1 {
     display: grid;
     margin-top: 450px;
     margin-bottom: 70px;
-    grid-template-columns: 10% 300px 10px auto 10%;
+    grid-template-columns: 10% 300px 10px auto auto 10%;
     grid-template-rows: 700px;
 }
 .twitter {
@@ -149,8 +151,31 @@ p, h1 {
     grid-column-start: 2;
     grid-column-end: 2;
 }
-.infopanels {
+.panel1 {
     background-color: #f4f7f9;
     grid-column-start: 4;
     grid-column-end: 4;
+    border-right: 1px solid #ddd;
+}
+.panel2 {
+    background-color: #fff;
+    grid-column-start: 5;
+    grid-column-end: 5;
+}
+.panel1,
+.panel2 {
+    text-align: center;
+    padding: 1em;
+}
+.panel1 h1,
+.panel2 h1 {
+    color: #202020;
+    font-size: 2.5em;
+}
+.panel1 p,
+.panel2 p {
+    color: #202020;
+    text-align: left;
+    word-wrap: break-word;
+    font-size: 1.1em;
 }
