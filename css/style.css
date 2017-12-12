@@ -141,7 +141,7 @@ p, h1 {
     display: grid;
     margin-top: 450px;
     margin-bottom: 70px;
-    grid-template-columns: 10% 300px 10px auto 10%;
+    grid-template-columns: 10% 300px 10px auto auto 10%;
     grid-template-rows: 700px;
 }
 .twitter {
@@ -149,8 +149,18 @@ p, h1 {
     grid-column-start: 2;
     grid-column-end: 2;
 }
-.infopanels {
+.panel1 {
     background-color: #f4f7f9;
     grid-column-start: 4;
     grid-column-end: 4;
+    border-right: 1px solid #ddd;
+}
+.panel2 {
+    background-color: #fff;
+    grid-column-start: 5;
+    grid-column-end: 5;
+}
+.panel1, .panel2 {
+    text-align: center;
+    padding: 1em;
 }
