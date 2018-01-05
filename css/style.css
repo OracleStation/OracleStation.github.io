@@ -7,6 +7,7 @@ h1 {
     font-family: 'PT Sans Narrow';
     color: lightgray;
 }
+/* Navbar CSS */
 .navbar {
     position: fixed;
     background: repeating-linear-gradient(
@@ -17,98 +18,71 @@ h1 {
         #121212 20px
     );
     width: 100%;
-    height: 3em;
+    height: 52px;
     top: 0;
     left: 0;
     z-index: 50;
 }
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 3em 0;
-    display: flex;
-    top: 0;
+/* Define what floats where and whatnot */
+.navbar-left {
+    float: left;
+}
+.navbar-right {
     float: right;
 }
-.navbar li {
-    text-align: center;
-    width: 4em;
-    height: 3em;
-    color: #ffffff;
-    background-color: #121212;
+
+/* Logo */
+.logo-container {
     display: inline-block;
-    padding: 0 1em 0;
-    line-height: 3em;
+    margin-left: 1em;
+    margin-top: 1em;
 }
-.navbar li:hover {
-    background-color: #252525;
-}
-.navbar a {
-    text-decoration: none;
-    font-family: 'PT Sans Narrow';
-    font-size: 1em;
+.image-logo-container {
     float: left;
-}
-/* Logos and Ship */
-.logocontainer {
-    float: left;
+    position: relative;
     border-radius: 50%;
-    height: 8em;
-    width: 8em;
-    background-color: rgba(16, 16, 16, 1);
-    margin-left: 1.5em;
-    z-index: 2;
+    height: 140px;
+    width: 140px;
+    background-color: #121212;
 }
-.logocontainer img {
+.image-logo {
     width: inherit;
     height: inherit;
 }
-.textlogo {
-    text-align: justify
-}
-.textlogo h1 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 4.5em 0;
+.text-logo {
+    float: right;
+    padding: 1em;
     font-family: 'Press Start 2P';
-    font-size: 2em;
-    color: #ffffff;
+    color: #fff;
+    letter-spacing: -1.5px;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
 }
-/* Logo animation */
-.faded,
-.d1 {
-    -webkit-animation: fadein 3s;
-    -moz-animation: fadein 3s;
-    -ms-animation: fadein 3s;
-    animation: fadein 3s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    -ms-animation-fill-mode: forwards;
+
+/* Navbar elements */
+
+.navbar-right ul {
+    list-style-type: none;
+    margin: 0 30px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #121212;
 }
-.d1{
-    opacity: 0;
-    animation-delay: 2s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    -ms-animation: 2s;
+.navbar-right li {
+    float: right;
 }
-@keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.navbar-right li a {
+    text-decoration: none;
+    display: block;
+    font-family: 'PT Sans Narrow';
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 52px;
+    padding: 0 20px 0;
 }
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.navbar-right li a:hover {
+    background-color: #252525;
 }
 
 /* Background animation */
@@ -141,10 +115,10 @@ h1 {
 /* Info */
 .panelcontainer {
     display: grid;
-    margin-top: 450px;
-    margin-bottom: 70px;
-    grid-template-columns: 10% 300px 10px auto auto 10%;
-    grid-template-rows: 700px;
+    margin-top: 300px;
+    margin-bottom: auto;
+    grid-template-columns: 15% 300px 10px auto auto 15%;
+    grid-template-rows: 600px;
 }
 .twitter {
     background-color: #f4f7f9;
@@ -166,16 +140,16 @@ h1 {
 .panel2 {
     text-align: center;
     padding: 1em;
+    min-width: 400px;
 }
 .panel1 h1,
 .panel2 h1 {
     color: #202020;
-    font-size: 2.5em;
 }
 .panel1 p,
 .panel2 p {
     color: #202020;
     text-align: left;
     word-wrap: break-word;
-    font-size: 1.1em;
+    font-size: 20px;
 }
