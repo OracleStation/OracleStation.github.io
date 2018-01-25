@@ -116,9 +116,9 @@ h1 {
 /* Info */
 .panelcontainer {
     display: grid;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: auto;
-    grid-template-columns: 15% 300px 10px auto auto 15%;
+    grid-template-columns: 15% auto auto 15%;
     grid-template-rows: 600px;
 }
 .twitter {
@@ -128,14 +128,14 @@ h1 {
 }
 .panel1 {
     background-color: #f4f7f9;
-    grid-column-start: 4;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2;
     border-right: 1px solid #ddd;
 }
 .panel2 {
     background-color: #fff;
-    grid-column-start: 5;
-    grid-column-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 .panel1,
 .panel2 {
