@@ -2,41 +2,55 @@ body {
     margin: 0;
     padding: 0;
 }
-p,
-h1 {
-    font-family: 'PT Sans Narrow';
-    color: lightgray;
+
+/* Preloader */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow: visible;
+    background: #000;
 }
+
+
 /* Navbar CSS */
+
 .navbar {
     position: fixed;
-    background: repeating-linear-gradient(
-        135deg,
-        #252525,
-        #252525 10px,
-        #121212 10px,
-        #121212 20px
-    );
+    background: repeating-linear-gradient( 135deg,
+    #252525,
+    #252525 10px,
+    #121212 10px,
+    #121212 20px);
     width: 100%;
     height: 52px;
     top: 0;
     left: 0;
     z-index: 50;
 }
-/* Define what floats where and whatnot */
+
+/* Navbar alignment */
+
 .navbar-left {
     float: left;
 }
+
 .navbar-right {
     float: right;
 }
 
 /* Logo */
+
 .logo-container {
     display: inline-block;
     margin-left: 1em;
     margin-top: 1em;
 }
+
 .image-logo-container {
     float: left;
     position: relative;
@@ -45,10 +59,12 @@ h1 {
     width: 140px;
     background-color: #121212;
 }
+
 .image-logo {
     width: inherit;
     height: inherit;
 }
+
 .text-logo {
     float: right;
     padding: 1em;
@@ -57,6 +73,7 @@ h1 {
     letter-spacing: -1.5px;
     font-smooth: never;
     -webkit-font-smoothing: none;
+    text-shadow: 2px 2px 0 #000;
 }
 
 /* Navbar elements */
@@ -66,32 +83,44 @@ h1 {
     margin: 0 30px;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.5);
-    box-shadow: 0 0 30px 10px rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.6);
 }
+
 .navbar-right li {
     float: right;
 }
+
 .navbar-right li a {
     text-decoration: none;
     display: block;
-    font-family: 'PT Sans Narrow';
-    font-size: 18px;
+    width: 40px;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
     color: #fff;
     text-align: center;
     line-height: 52px;
     padding: 0 20px 0;
 }
+
 .navbar-right li a:hover {
     background-color: #252525;
 }
 
 /* Background animation */
+
 @keyframes animateBackground {
-    from { background-position: 0 0; }
-    to { background-position: -960px 0; }
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -960px 0;
+    }
 }
-.layer1, .layer2, .layer3 {
+
+.layer1,
+.layer2,
+.layer3 {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -100,57 +129,75 @@ h1 {
     background-repeat: repeat;
     z-index: -1;
 }
+
 .layer1 {
     background-image: url("../images/layer1.png");
     animation: animateBackground 80s linear infinite;
 }
+
 .layer2 {
     background-image: url("../images/layer2.png");
     animation: animateBackground 40s linear infinite;
 }
+
 .layer3 {
     background-image: url("../images/layer3.png");
     animation: animateBackground 20s linear infinite;
 }
 
 /* Info */
+
+.panel1 h1,
+.panel2 h1 {
+    font-family: 'Raleway';
+    letter-spacing: -1px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
 .panelcontainer {
     display: grid;
     margin-top: 200px;
     margin-bottom: auto;
-    grid-template-columns: 15% auto auto 15%;
-    grid-template-rows: 600px;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: auto;
 }
-.twitter {
-    background-color: #f4f7f9;
-    grid-column-start: 2;
-    grid-column-end: 2;
-}
+
 .panel1 {
     background-color: #f4f7f9;
     grid-column-start: 2;
     grid-column-end: 2;
     border-right: 1px solid #ddd;
 }
+
 .panel2 {
     background-color: #fff;
     grid-column-start: 3;
     grid-column-end: 3;
 }
+
 .panel1,
 .panel2 {
-    text-align: center;
-    padding: 1em;
+    padding: 3em;
     min-width: 400px;
 }
+
 .panel1 h1,
 .panel2 h1 {
     color: #202020;
+    text-align: center;
 }
+
 .panel1 p,
 .panel2 p {
     color: #202020;
     text-align: left;
-    word-wrap: break-word;
+    word-wrap: normal;
     font-size: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.panel1 li,
+.panel2 li {
+    font-family: sans-serif;
 }
