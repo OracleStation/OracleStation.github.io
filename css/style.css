@@ -16,12 +16,12 @@ body {
     background: #000;
 }
 #preload-image {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: -150px 0 0 -150px;
+  margin: -100px 0 0 -100px;
   animation: animatePreloadImage 0.7s alternate infinite;
 }
 @keyframes animatePreloadImage {
