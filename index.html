@@ -2,65 +2,60 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Oracle Station</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel='stylesheet' type='text/css' href='css/normalize.css' />
-    <link rel='stylesheet' type='text/css' href='css/skeleton.css' />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300|Source+Sans+Pro|Press+Start+2P" rel="stylesheet" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/preload.js" type="text/javascript"></script>
+  <meta charset="UTF-8" />
+  <title>Oracle Station</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel='stylesheet' type='text/css' href='css/normalize.css' />
+  <link rel='stylesheet' type='text/css' href='css/skeleton.css' />
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro|Press+Start+2P" rel="stylesheet" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/preload.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <!-- Briefly preload everything before showing the page -->
-    <div id="preloader">
-      <img src='images/oracle.svg' id="preload-image">
-    </div>
-    <!-- Background parallax -->
-    <div class="layer1"></div>
-    <div class="layer2"></div>
-    <div class="layer3"></div>
-    <div class="logo" >
-        <h1 id="textlogo" >
+  <!-- Briefly preload everything before showing the page -->
+  <div id="preloader">
+    <img src='images/oracle.svg' id="preload-image">
+  </div>
+  <!-- Background parallax -->
+  <div class="layer1"></div>
+  <div class="layer2"></div>
+  <div class="layer3"></div>
+
+  <div class="container">
+  <div class="logo">
+    <h1 id="textlogo">
     <img src="images/oracle.svg">ORACLE<br>STATION</h1>
-    </div>
-    <div class="panelcontainer">
+  </div>
+    <!-- Navbar -->
+    <nav>
+      <a href="https://discord.gg/JbNpMuP"><i class="fab fa-discord"></i><span class='hackyspace'>Discord</span></a>
+      <a href="https://github.com/OracleStation/OracleStation"><i class="fab fa-github"></i><span class='hackyspace'>Github</span></a>
+      <a href="https://wiki.oraclestation.com/"><i class="fab fa-wikipedia-w"></i><span class='hackyspace'>Wiki</span></a>
+      <a href="https://forums.oraclestation.com/"><i class="far fa-comment"></i><span class='hackyspace'>Forums</span></a>
+    </nav>
 
-        <!-- Navbar -->
-        <ul class="navbar">
-            <li><a href="https://discord.gg/JbNpMuP"><i class="fab fa-discord"></i><span class='hackyspace'>Discord</span></a></li>
-            <li><a href="https://github.com/OracleStation/OracleStation"><i class="fab fa-github"></i><span class='hackyspace'>Github</span></a></li>
-            <li><a href="https://wiki.oraclestation.com/"><i class="fab fa-wikipedia-w"></i><span class='hackyspace'>Wiki</span></a></li>
-            <li><a href="https://forums.oraclestation.com/"><i class="far fa-comment"></i><span class='hackyspace'>Forums</span></a></li>
-        </ul>
+    <!-- Information Panels -->
+    <div class='server-info'><h1>SERVER INFO WILL GO HERE</h1></div>
+    <div class='heading row'><h1>Welcome to Oracle Station!</h1></div>
+  <div class='panel-numero-uno row'>
+    <p>
+      <img src='images/placeholder.png' style='float: right; width: 300px; margin-left: 30px;'>
+    We are a medium RP Space Station 13 server running our own fork of the /tg/station code. Our server incorporates features both new and old, including:</p>
+    <ul>
+      <li>A reworked brig system, where criminals are placed in a large holding cell called 'genpop'.</li>
+      <li>An in-depth medical system ported from Baystation 12.</li>
+      <li>Movement speed more in line with Colonial Marines, allowing for more strategic than executional play.</li>
+    </ul>
+    <p>
 
-        <!-- Information Panels -->
-        <div class="panel1">
-            <h1>What is Oracle Station?<br>
-            </h1>
-
-            <p> We are a medium RP Space Station 13 server running on our own fork of the /tg/station code. Some differences include:
-                <ul>
-                    <li>Reworked security. Rather than having individual cells, criminals are placed in one large cell called genpop. This simplifies the brigging process while giving criminals and antagonists some windows to keep things interesting.</li>
-                    <li>A more in-depth medical system from Baystation12, featuring broken bones, organ damage, and more forms of misery.</li>
-                    <li>Slower movement speed. Oracle's movement speed is more in line with Paradise or Colonial Marines movement speed, allowing for more strategic than executional play. Because of this, we've had to tweak the speeds of NPCs in places such as Lavaland, which is currently slightly harder than TG's version of Lavaland.</li>
-                    <li>IPCs, our own version of the machine people from Baystation and Paradise. They are easily damaged, yet easily repairable with items commonly found around the station, like wire or a welding tool. However, they are extremely weak to EMPs. Unlike other servers, EMPs on Oracle do not cause instant death. Instead, they cause limbs to malfunction, along with some damage. Because of our human-enforced command and Asimov AI lawset, IPCs are not permitted to play a command role.</li>
-                </ul>
-            </p>
-        </div>
-        <div class="panel2">
-            <img src="https://i.imgur.com/4Ad24iu.jpg" width="100%" height="auto" />
-            <p>The Oracle codebase is maintained by a team of talented SS13 developers with help from the community. A delicious blend of roleplay, action, and standard SS13 silliness, Oracle Station is a station sure to please.
-            </p>
-            <h1>Got it? Join the server below!</h1>
-            <div style="width: 100%; text-align: center;"><a href="http://play.oraclestation.com"><img class="gamebanner" src="https://www.oraclestation.com/joinbutton/gamebanner.php?servernum=1" onload="setupreloader(1, event.target, 1117)"></a></div>
-        </div>
-        <div class="copyright-panel">
-            <p id="copyright">&copy; 2017-2018 Oracle Station</p>
-        </div>
-    </div>
+    The Oracle codebase is maintained by a team of talented SS13 developers with help from the community. A delicious blend of roleplay, action, and standard SS13 silliness, Oracle Station is a station sure to please.
+  </p>
+  </div>
+  <div id='copyright'>
+    <p>&copy; 2017-2018 Oracle Station</p>
+  </div>
 </body>
 
 </html>
