@@ -54,16 +54,24 @@ body {
     animation: animateBackground 20s linear infinite;
 }
 
-/* Info */
-
-.panel1 h1,
-.panel2 h1 {
-    font-family: 'Raleway';
-    letter-spacing: -1px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
+/* Text Logo */
+.logo {
+    margin-left: 15%;
 }
-
+#textlogo {
+    color: white;
+    font-size: 50px;
+    font-family: 'Press Start 2P';
+    letter-spacing: -1.5px;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    text-shadow: 2px 2px 0 #000;
+}
+#textlogo img {
+    float: left;
+    margin-right: 30px;
+}
+/* Info */
 .panelcontainer {
     display: grid;
     margin-bottom: auto;
@@ -124,11 +132,14 @@ body {
     padding: 3em;
     overflow: hidden;
 }
-
 .panel1 h1,
 .panel2 h1 {
     color: #202020;
     text-align: center;
+    font-family: 'Raleway';
+    letter-spacing: -1px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
 }
 
 .panel1 p,
