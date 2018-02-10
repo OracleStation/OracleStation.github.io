@@ -60,9 +60,9 @@ body {
 }
 #textlogo {
     color: white;
-    font-size: 50px;
+    font-size: 45px;
+    line-height: 65px;
     font-family: 'Press Start 2P';
-    letter-spacing: -1.5px;
     font-smooth: never;
     -webkit-font-smoothing: none;
     text-shadow: 2px 2px 0 #000;
@@ -70,6 +70,8 @@ body {
 #textlogo img {
     float: left;
     margin-right: 30px;
+    width: 130px;
+    height: auto;
 }
 /* Info */
 .panelcontainer {
@@ -107,6 +109,9 @@ body {
 }
 .navbar li a:hover {
     box-shadow: inset 0 -7px 0 0 gray;
+}
+.hackyspace {
+    margin-left: 10px;
 }
 #copyright {
     color: #fff;
