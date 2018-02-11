@@ -74,9 +74,10 @@ body {
 /* Text Logo */
 #textlogo {
     color: white;
-    font-size: 45px;
-    line-height: 65px;
-    font-family: 'Press Start 2P';
+    font-size: 70px;
+    line-height: 130px;
+    letter-spacing: 15px;
+    font-family: 'Raleway';
     font-smooth: never;
     -webkit-font-smoothing: none;
     text-shadow: 2px 2px 0 #000;
@@ -149,7 +150,6 @@ nav a:hover {
     float: right;
     width: 300px;
     margin-left: 30px;
-
 }
 hr {
   color: #dcdcdc;
