@@ -145,6 +145,12 @@ nav a:hover {
   height: auto;
   border-bottom: 20px solid #151515;
 }
+.panel-numero-uno img {
+    float: right;
+    width: 300px;
+    margin-left: 30px;
+
+}
 hr {
   color: #dcdcdc;
   width: 80%;
