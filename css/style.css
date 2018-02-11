@@ -74,13 +74,14 @@ body {
 /* Text Logo */
 #textlogo {
     color: white;
-    font-size: 70px;
+    font-size: 4.9em;
     line-height: 130px;
     letter-spacing: 15px;
     font-family: 'Raleway';
     font-smooth: never;
     -webkit-font-smoothing: none;
     text-shadow: 2px 2px 0 #000;
+    white-space: nowrap;
 }
 #textlogo img {
     float: left;
@@ -105,7 +106,7 @@ nav a {
     display: block;
     text-align: center;
     font-family: "Source Sans Pro";
-    font-size: 17px;
+    font-size: 1.2em;
     line-height: 60px;
     padding: 0 30px;
     color: white;
@@ -122,10 +123,26 @@ nav a:hover {
 
 /* Panels */
 .server-info {
-    background: rgb(255, 255, 255);
-    height: 200px;
+    padding: 50px;
+    background: rgb(30, 30, 30);
     border-bottom: 20px solid #151515;
     margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.server-info h2 {
+    font-family: 'Source Sans Pro';
+    color: white;
+    display: inline !important;
+}
+#g1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+#g2 {
+    padding-left: 13em;
+    grid-column-start: 2;
+    grid-column-end: 2;
 }
 .heading {
     background-image: linear-gradient(transparent, #000), url(https://i.imgur.com/4Ad24iu.jpg);
@@ -134,22 +151,35 @@ nav a:hover {
     word-wrap: break-word;
     height: 250px;
     border-top: 20px solid #151515;
+    border-bottom: 20px solid #151515;
 }
 .heading h1 {
-  padding: 170px 30px;
+  padding: 150px 30px;
+  font-size: 3em;
   bottom: 0;
   color: #fff;
 }
 .panel-numero-uno {
-  padding: 50px;
   background: rgb(255, 255, 255);
-  height: auto;
+  height: 500px;
   border-bottom: 20px solid #151515;
 }
+.panel-numero-uno .info {
+    padding: 1em;
+}
 .panel-numero-uno img {
+    position: relative;
     float: right;
-    width: 300px;
-    margin-left: 30px;
+    height: 100%;
+    margin-left: 1em;
+}
+@media (min-width: 400px) {
+    .panel-numero-uno {
+        height: auto;
+    }
+    .panel-numero-uno img {
+        height: 500px;
+    }
 }
 hr {
   color: #dcdcdc;
