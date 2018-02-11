@@ -15,22 +15,24 @@ body {
     overflow: visible;
     background: #000;
 }
+
 #preload-image {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -100px 0 0 -100px;
-  animation: animatePreloadImage 0.7s alternate infinite;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+    animation: animatePreloadImage 0.7s alternate infinite;
 }
+
 @keyframes animatePreloadImage {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.5;
-  }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
 }
 
 /* Background animation */
@@ -72,6 +74,7 @@ body {
 }
 
 /* Text Logo */
+
 #textlogo {
     color: white;
     font-size: 4.9em;
@@ -83,13 +86,16 @@ body {
     text-shadow: 2px 2px 0 #000;
     white-space: nowrap;
 }
+
 #textlogo img {
     float: left;
     margin-right: 30px;
     width: 130px;
     height: auto;
 }
+
 /* Navbar */
+
 nav {
     margin: 0;
     padding: 0;
@@ -100,6 +106,7 @@ nav {
     width: 100%;
     height: 60px;
 }
+
 nav a {
     float: right;
     background: #151515;
@@ -114,14 +121,17 @@ nav a {
     transition: box-shadow 0.2s;
     -webkit-transition: box-shadow 0.2s;
 }
+
 nav a:hover {
     box-shadow: inset 0 -7px 0 0 white;
 }
+
 .hackyspace {
     margin-left: 10px;
 }
 
 /* Panels */
+
 .server-info {
     padding: 50px;
     background: rgb(30, 30, 30);
@@ -130,20 +140,24 @@ nav a:hover {
     display: grid;
     grid-template-columns: auto auto;
 }
+
 .server-info h2 {
     font-family: 'Source Sans Pro';
     color: white;
     display: inline !important;
 }
+
 #g1 {
     grid-column-start: 1;
     grid-column-end: 1;
 }
+
 #g2 {
     padding-left: 13em;
     grid-column-start: 2;
     grid-column-end: 2;
 }
+
 .heading {
     background-image: linear-gradient(transparent, #000), url(https://i.imgur.com/4Ad24iu.jpg);
     background-repeat: no-repeat;
@@ -153,26 +167,31 @@ nav a:hover {
     border-top: 20px solid #151515;
     border-bottom: 20px solid #151515;
 }
+
 .heading h1 {
-  padding: 150px 30px;
-  font-size: 3em;
-  bottom: 0;
-  color: #fff;
+    padding: 150px 30px;
+    font-size: 3em;
+    bottom: 0;
+    color: #fff;
 }
+
 .panel-numero-uno {
-  background: rgb(255, 255, 255);
-  height: 500px;
-  border-bottom: 20px solid #151515;
+    background: rgb(255, 255, 255);
+    height: 500px;
+    border-bottom: 20px solid #151515;
 }
+
 .panel-numero-uno .info {
     padding: 1em;
 }
+
 .panel-numero-uno img {
     position: relative;
     float: right;
     height: 100%;
     margin-left: 1em;
 }
+
 @media (min-width: 400px) {
     .panel-numero-uno {
         height: auto;
@@ -181,19 +200,24 @@ nav a:hover {
         height: 500px;
     }
 }
+
 hr {
-  color: #dcdcdc;
-  width: 80%;
+    color: #dcdcdc;
+    width: 80%;
 }
-p, li {
-  font-size: 1.1em;
-  text-align: justify;
-  font-family: 'Source Sans Pro';
+
+p,
+li {
+    font-size: 1.1em;
+    text-align: justify;
+    font-family: 'Source Sans Pro';
 }
+
 #copyright {
-  margin-top: 10px;
+    margin-top: 10px;
 }
+
 #copyright p {
-  color: #fff;
-  font-size: 1em;
+    color: #fff;
+    font-size: 1em;
 }
