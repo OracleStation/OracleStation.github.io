@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 15px 0;
 }
 
 /* Preloader */
@@ -182,14 +182,14 @@ nav a:hover {
 }
 
 .panel-numero-uno .info {
-    padding: 1em;
+    width: 560px;
+    padding: 2em;
+    text-align: justify;
 }
 
 .panel-numero-uno img {
-    position: relative;
+    height: 500px;
     float: right;
-    height: 100%;
-    margin-left: 1em;
 }
 
 @media (min-width: 400px) {
