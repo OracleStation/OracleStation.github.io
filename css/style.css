@@ -199,11 +199,24 @@ nav a:hover {
         height: 500px;
     }
 }
-.recent-commits {
-    padding-top: 3em;
+/* Recent PRs */
+.recent-pr {
+    padding: 3em;
     text-align: center;
 }
 
+.pull-request {
+  margin: auto;
+  position: relative;
+  width: 80%;
+  height: 100px;
+  border-top: 1px solid #dcdcdc;
+}
+.pull-request:last-child {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* Some other formatting idk */
 hr {
     color: #dcdcdc;
     width: 80%;
@@ -216,6 +229,7 @@ li {
     font-family: 'Source Sans Pro';
 }
 
+/* Small copyright notice at the bottom */
 #copyright {
     margin-top: 10px;
 }

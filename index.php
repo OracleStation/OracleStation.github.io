@@ -1,3 +1,6 @@
+<?php
+include 'assets/app.php';
+ ?>
 <!doctype html>
 <html lang="en">
 
@@ -69,8 +72,18 @@
                     The Oracle codebase is maintained by a team of talented SS13 developers with help from the community. A delicious blend of roleplay, action, and standard SS13 silliness, Oracle Station is a station sure to please.
                 </p>
             </div>
-            <div class="recent-commits">
+            <div class="recent-pr">
                 <i class="fab fa-github-alt" style="font-size: 6em"></i>
+                <div class="pull-request">
+                </div>
+                <div class="pull-request">
+                </div>
+                <div class="pull-request">
+                </div>
+                <div class="pull-request">
+                </div>
+                <div class="pull-request">
+                </div>
             </div>
         </div>
         <div id='copyright'>
