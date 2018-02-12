@@ -177,7 +177,6 @@ nav a:hover {
 
 .panel-numero-uno {
     background: rgb(255, 255, 255);
-    height: 500px;
     border-bottom: 20px solid #151515;
 }
 
@@ -199,6 +198,10 @@ nav a:hover {
     .panel-numero-uno img {
         height: 500px;
     }
+}
+.recent-commits {
+    padding-top: 3em;
+    text-align: center;
 }
 
 hr {
