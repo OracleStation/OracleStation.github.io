@@ -77,7 +77,7 @@ include 'assets/app.php';
                     </li>
                 </ul>
                 <p>
-                    The Oracle codebase is maintained by a team of talented SS13 developers with help from the community. A delicious blend of roleplay, action, and standard SS13 silliness, Oracle Station is a station sure to please.
+                    The Oracle codebase is developed the community and maintained by a small group of SS13 developers. A delicious blend of roleplay, action, and standard SS13 silliness, Oracle Station is a station sure to please.
                 </p>
             </div>
             <div class="recent-pr">
