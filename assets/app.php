@@ -1,15 +1,45 @@
 <?php
+/*
+<div class="pull-request">
+  <img class='avatar'>
+  <h5></h5>
+  <p></p>
+  <p></p>
+</div>
+*/
+
+/* Testing
 $opts = [
         'http' => [
                 'method' => 'GET',
                 'header' => [
-                        'User-Agent: PHP'
+                        'User-Agent: PHP',
                 ]
         ]
 ];
-
-$oAuthKey = "";
 $context = stream_context_create($opts);
 $data = file_get_contents("https://api.github.com/repos/oraclestation/oraclestation/pulls", true, $context);
-$json_array = json_decode($data);
+*/
+
+function getClosedPRs(){
+$data = file_get_contents('pulls.json', true);
+$jsonArray = json_decode($data, true);
+
+foreach($jsonArray as $k=> $fuck){
+  if($k < 5) {
+  echo("<div class='pull-request'>
+  <img class='avatar' src='{$jsonArray[$k]['user']['avatar_url']}'>
+  <h5>{$jsonArray[$k]['title']}</h5>
+  <p>{$jsonArray[$k]['body']}</p>
+  <p>By {$jsonArray[$k]['user']['login']}</p>
+  </div>
+");
+  $k++;
+  }
+  else {
+    break;
+  }
+}
+}
+
 ?>

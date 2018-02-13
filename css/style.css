@@ -202,11 +202,11 @@ nav a:hover {
 /* Recent PRs */
 .recent-pr {
     padding: 3em;
-    text-align: center;
 }
 
 .pull-request {
   margin: auto;
+  padding: 1em;
   position: relative;
   width: 80%;
   height: 100px;
@@ -225,14 +225,14 @@ nav a:hover {
   white-space: nowrap;
   overflow: hidden;
 }
-.pull-request .avatar {
-  height: 70px;
+.avatar {
+  height: 70px !important;
   margin-top: 15px;
   margin-right: 15px;
   width: auto;
   border-radius: 50%;
   border: 1px solid #dcdcdc;
-  float: left;
+  float: left !important;
 }
 .pull-request:last-child {
   border-bottom: 1px solid #dcdcdc;

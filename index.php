@@ -73,32 +73,7 @@ include 'assets/app.php';
                 </p>
             </div>
             <div class="recent-pr">
-                <i class="fab fa-github-alt" style="font-size: 6em"></i>
-                <div class="pull-request">
-                  <img class='avatar' src='<?php echo($json_array[0]->user->avatar_url);?>'>
-                  <h5><?php echo($json_array[0]->title);?></h5>
-                  <p><?php echo($json_array[0]->body);?></p>
-                </div>
-                <div class="pull-request">
-                  <img class='avatar' src='<?php echo($json_array[1]->user->avatar_url);?>'>
-                  <h5><?php echo($json_array[1]->title);?></h5>
-                  <p><?php echo($json_array[1]->body);?></p>
-                </div>
-                <div class="pull-request">
-                  <img class='avatar' src='<?php echo($json_array[2]->user->avatar_url);?>'>
-                  <h5><?php echo($json_array[2]->title);?></h5>
-                  <p><?php echo($json_array[2]->body);?></p>
-                </div>
-                <div class="pull-request">
-                  <img class='avatar' src='<?php echo($json_array[3]->user->avatar_url);?>'>
-                  <h5><?php echo($json_array[3]->title);?></h5>
-                  <p><?php echo($json_array[3]->body);?></p>
-                </div>
-                <div class="pull-request">
-                  <img class='avatar' src='<?php echo($json_array[4]->user->avatar_url);?>'>
-                  <h5><?php echo($json_array[4]->title);?></h5>
-                  <p><?php echo($json_array[4]->body);?></p>
-                </div>
+              <?php getClosedPRs();?>
             </div>
         </div>
         <div id='copyright'>
