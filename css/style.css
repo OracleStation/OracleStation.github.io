@@ -218,14 +218,15 @@ nav a:hover {
 .pull-request h5 {
   margin: 0;
   padding: 0;
-  font-weight: bolder;
+  font-weight: bold;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   color: #000;
 }
 .pull-request a {
-    text-decoration: none;;
+    text-decoration: none;
+    color: #000;
 }
 .pull-request p {
   text-overflow: ellipsis;
