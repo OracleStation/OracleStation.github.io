@@ -11,8 +11,9 @@ $opts = [
 ];
 $context = stream_context_create($opts);
 $data = file_get_contents("https://api.github.com/repos/oraclestation/oraclestation/pulls?state=closed&client_id=" . $clientID . '&client_secret=' . $clientSecret, true, $context);
-    $jsonArray = json_decode($data, true);
-    $mergeStatus = "";
+$jsonArray = json_decode($data, true);
+$mergeStatus = "";
+
 
     foreach($jsonArray as $k=> $fuck){
         if($k < 5) {
