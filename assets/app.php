@@ -19,10 +19,10 @@ function getClosedPRs()
 			}
 
 			echo ("<div class='pull-request'>
-<a href='{$jsonArray[$k]['user']['url']}'><img class='avatar' src='{$jsonArray[$k]['user']['avatar_url']}'></a>
+<a href='{$jsonArray[$k]['user']['html_url']}'><img class='avatar' src='{$jsonArray[$k]['user']['avatar_url']}'></a>
 <a href='{$jsonArray[$k]['html_url']}'><h5><img class='mergestatus' src='{$mergeStatus}'>{$jsonArray[$k]['title']}</h5></a>
 <p>{$jsonArray[$k]['body']}<br />
-By <a href='{$jsonArray[$k]['user']['url']}'>{$jsonArray[$k]['user']['login']}</a></p>
+By <a href='{$jsonArray[$k]['user']['html_url']}'>{$jsonArray[$k]['user']['login']}</a></p>
 </div>
 ");
 			$k++;
