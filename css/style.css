@@ -225,12 +225,17 @@ nav a:hover {
   color: #000;
 }
 .pull-request a {
-    text-decoration: none;
+    text-decoration: none;;
 }
 .pull-request p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+.mergestatus {
+    height: 25px !important;
+    width: auto !important;
+    border: none !important;
 }
 .avatar {
   height: 70px !important;
