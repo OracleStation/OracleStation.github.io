@@ -14,6 +14,14 @@ include 'assets/app.php';
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/preload.js" type="text/javascript"></script>
+    <!-- Disable preloader for those with javascript disabled-->
+    <noscript>
+      <style>
+        #preloader {
+        display: none;
+        }
+      </style>
+      </noscript>
 </head>
 
 <body>
