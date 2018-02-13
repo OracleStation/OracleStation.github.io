@@ -1,28 +1,16 @@
 <?php
-/*
-<div class="pull-request">
-  <img class='avatar'>
-  <h5></h5>
-  <p></p>
-  <p></p>
-</div>
-*/
-
-/* Testing
+include('config.php');
+function getClosedPRs(){
 $opts = [
         'http' => [
                 'method' => 'GET',
                 'header' => [
-                        'User-Agent: PHP',
+                        'User-Agent: Oracle-Station-Landing',
                 ]
         ]
 ];
 $context = stream_context_create($opts);
-$data = file_get_contents("https://api.github.com/repos/oraclestation/oraclestation/pulls", true, $context);
-*/
-
-function getClosedPRs(){
-    $data = file_get_contents('cache/pulls.json', true);
+$data = file_get_contents("https://api.github.com/repos/oraclestation/oraclestation/pulls?state=closed&client_id=" . $clientID . '&client_secret=' . $clientSecret, true, $context);
     $jsonArray = json_decode($data, true);
     $mergeStatus = "";
 
@@ -45,8 +33,6 @@ By {$jsonArray[$k]['user']['login']}</p>
         }
         else {
     break;
-  }
-}
-}
+}}}
 
 ?>
