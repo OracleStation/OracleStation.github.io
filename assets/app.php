@@ -28,8 +28,8 @@ $jsonArray = json_decode($data, true);
 foreach($jsonArray as $k=> $fuck){
   if($k < 5) {
   echo("<div class='pull-request'>
-  <img class='avatar' src='{$jsonArray[$k]['user']['avatar_url']}'>
-  <h5>{$jsonArray[$k]['title']}</h5>
+  <a href='{$jsonArray[$k]['user']['url']}'><img class='avatar' src='{$jsonArray[$k]['user']['avatar_url']}'></a>
+  <a href='{$jsonArray[$k]['html_url']}'><h5>{$jsonArray[$k]['title']}</h5></a>
   <p>{$jsonArray[$k]['body']}</p>
   <p>By {$jsonArray[$k]['user']['login']}</p>
   </div>

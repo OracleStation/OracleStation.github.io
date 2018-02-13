@@ -45,7 +45,7 @@ include 'assets/app.php';
         <h2>Players: 0</h2>
         </span>
             <span id="g2">
-        <h2>Gamemode: Secret</h2><br>
+        <h2>Round Status: In lobby</h2><br>
         <h2>Round Time: 12:00</h2>
         </span>
         </div>

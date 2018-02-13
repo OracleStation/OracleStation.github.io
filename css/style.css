@@ -153,7 +153,7 @@ nav a:hover {
 }
 
 #g2 {
-    padding-left: 13em;
+    padding-left: 5em;
     grid-column-start: 2;
     grid-column-end: 2;
 }
@@ -219,6 +219,10 @@ nav a:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: #000;
+}
+.pull-request a {
+    text-decoration: none;
 }
 .pull-request p {
   text-overflow: ellipsis;
