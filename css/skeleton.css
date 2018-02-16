@@ -279,7 +279,7 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+  list-style: inside; }
 ol {
   list-style: decimal inside; }
 ol, ul {

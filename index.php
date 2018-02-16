@@ -46,17 +46,6 @@ include 'assets/app.php';
             <a href="https://wiki.oraclestation.com/"><i class="fab fa-wikipedia-w"></i><span class='hackyspace'>Wiki</span></a>
             <a href="https://forums.oraclestation.com/"><i class="far fa-comment"></i><span class='hackyspace'>Forums</span></a>
         </nav>
-        <!-- Information Panels -->
-        <div class='server-info'>
-            <span id="g1">
-        <h2>Map: Omegastation</h2><br>
-        <h2>Players: 0</h2>
-        </span>
-            <span id="g2">
-        <h2>Round Status: In lobby</h2><br>
-        <h2>Round Time: 12:00</h2>
-        </span>
-        </div>
         <div class='heading row'>
             <h1>Welcome to Oracle Station!</h1>
         </div>
