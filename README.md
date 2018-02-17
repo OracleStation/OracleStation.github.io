@@ -3,4 +3,6 @@
 
 Landing page for oraclestation.com root page
 
+If you want more than 50 Github API requests per hour, you'll need to register this as an application on Github, then set your client ID and client secret key in assets/config.php.
+
 See a live demonstration at https://oraclestation.github.io
