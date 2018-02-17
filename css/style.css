@@ -184,7 +184,7 @@ nav a:hover {
 }
 
 
-.panel-numero-uno img {
+.panel-numero-uno .poster {
     height: 500px;
     float: right;
     border: 1px solid #dcdcdc;
@@ -229,6 +229,7 @@ nav a:hover {
   overflow: hidden;
 }
 .mergestatus {
+    float: right;
     height: 25px !important;
     width: auto !important;
     border: none !important;
@@ -236,6 +237,7 @@ nav a:hover {
 .avatar {
   height: 70px !important;
   margin-top: 15px;
+  margin-left: 0 !important;
   margin-right: 1em;
   width: auto;
   border-radius: 50%;

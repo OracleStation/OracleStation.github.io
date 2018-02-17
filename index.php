@@ -50,7 +50,7 @@ include 'assets/app.php';
             <h1>Welcome to Oracle Station!</h1>
         </div>
         <div class='panel-numero-uno row'>
-            <img src='https://i.imgur.com/HdySzhQ.png'>
+            <img class='poster' src='https://i.imgur.com/HdySzhQ.png'>
             <div class="info">
                 <p>
                     We are a medium RP Space Station 13 server running our own fork of the /tg/station code. Our server incorporates features both new and old, including:</p>
