@@ -41,6 +41,7 @@ include 'assets/app.php';
         </div>
         <!-- Navbar -->
         <nav>
+            <a href="https://play.oraclestation.com/" style='float: left;'><i class="fas fa-gamepad"></i><span class='hackyspace'>Play Now!</span></a>
             <a href="https://discord.gg/JbNpMuP"><i class="fab fa-discord"></i><span class='hackyspace'>Discord</span></a>
             <a href="https://github.com/OracleStation/OracleStation"><i class="fab fa-github"></i><span class='hackyspace'>Github</span></a>
             <a href="https://wiki.oraclestation.com/"><i class="fab fa-wikipedia-w"></i><span class='hackyspace'>Wiki</span></a>
