@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 15px 0;
 }
 
 /* Preloader */
@@ -9,102 +9,30 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
     z-index: 100;
     overflow: visible;
     background: #000;
 }
 
-
-/* Navbar CSS */
-
-.navbar {
-    position: fixed;
-    background: repeating-linear-gradient( 135deg,
-    #252525,
-    #252525 10px,
-    #121212 10px,
-    #121212 20px);
-    width: 100%;
-    height: 52px;
-    top: 0;
-    left: 0;
-    z-index: 50;
+#preload-image {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+    animation: animatePreloadImage 0.7s alternate infinite;
 }
 
-/* Navbar alignment */
-
-.navbar-left {
-    float: left;
-}
-
-.navbar-right {
-    float: right;
-}
-
-/* Logo */
-
-.logo-container {
-    display: inline-block;
-    margin-left: 1em;
-    margin-top: 1em;
-}
-
-.image-logo-container {
-    float: left;
-    position: relative;
-    border-radius: 50%;
-    height: 140px;
-    width: 140px;
-    background-color: #121212;
-}
-
-.image-logo {
-    width: inherit;
-    height: inherit;
-}
-
-.text-logo {
-    float: right;
-    padding: 1em;
-    font-family: 'Press Start 2P';
-    color: #fff;
-    letter-spacing: -1.5px;
-    font-smooth: never;
-    -webkit-font-smoothing: none;
-    text-shadow: 2px 2px 0 #000;
-}
-
-/* Navbar elements */
-
-.navbar-right ul {
-    list-style-type: none;
-    margin: 0 30px;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.6);
-}
-
-.navbar-right li {
-    float: right;
-}
-
-.navbar-right li a {
-    text-decoration: none;
-    display: block;
-    width: 40px;
-    font-family: 'Source Sans Pro';
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-    line-height: 52px;
-    padding: 0 20px 0;
-}
-
-.navbar-right li a:hover {
-    background-color: #252525;
+@keyframes animatePreloadImage {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
 }
 
 /* Background animation */
@@ -145,59 +73,199 @@ body {
     animation: animateBackground 20s linear infinite;
 }
 
-/* Info */
+/* Text Logo */
 
-.panel1 h1,
-.panel2 h1 {
+#textlogo {
+    color: white;
+    font-size: 4.9em;
+    line-height: 130px;
+    letter-spacing: 15px;
     font-family: 'Raleway';
-    letter-spacing: -1px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    text-shadow: 2px 2px 0 #000;
+    white-space: nowrap;
 }
 
-.panelcontainer {
+#textlogo img {
+    float: left;
+    margin-right: 30px;
+    width: 130px;
+    height: auto;
+}
+
+/* Navbar */
+
+nav {
+    margin: 0;
+    padding: 0;
+    border-radius: 6px 6px 0 0;
+    list-style-type: none;
+    overflow: hidden;
+    background: #151515;
+    width: 100%;
+    height: 60px;
+}
+
+nav a {
+    float: right;
+    background: #151515;
+    display: block;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 1.2em;
+    line-height: 60px;
+    padding: 0 30px;
+    color: white;
+    text-decoration: none;
+    transition: box-shadow 0.2s;
+    -webkit-transition: box-shadow 0.2s;
+}
+
+nav a:hover {
+    box-shadow: inset 0 -5px 0 0 white;
+}
+
+.hackyspace {
+    margin-left: 10px;
+}
+
+/* Panels */
+
+.server-info {
+    padding: 50px;
+    background: rgb(30, 30, 30);
+    border-bottom: 20px solid #151515;
+    margin-bottom: 30px;
     display: grid;
-    margin-top: 200px;
-    margin-bottom: auto;
-    grid-template-columns: 15% 35% 35% 15%;
-    grid-template-rows: auto;
+    grid-template-columns: auto auto;
 }
 
-.panel1 {
-    background-color: #f4f7f9;
+.server-info h2 {
+    font-family: 'Source Sans Pro';
+    color: white;
+    display: inline !important;
+}
+
+#g1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#g2 {
+    padding-left: 5em;
     grid-column-start: 2;
     grid-column-end: 2;
-    border-right: 1px solid #ddd;
 }
 
-.panel2 {
-    background-color: #fff;
-    grid-column-start: 3;
-    grid-column-end: 3;
+.heading {
+    background-image: linear-gradient(transparent, #000), url(https://i.imgur.com/4Ad24iu.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    word-wrap: break-word;
+    height: 250px;
 }
 
-.panel1,
-.panel2 {
-    padding: 3em;
-    min-width: 400px;
+.heading h1 {
+    padding: 150px 30px;
+    font-size: 3em;
+    bottom: 0;
+    color: #fff;
 }
 
-.panel1 h1,
-.panel2 h1 {
-    color: #202020;
-    text-align: center;
+.panel-numero-uno {
+    padding: 2em;
+    background: rgb(255, 255, 255);
+    border-bottom: 20px solid #151515;
+}
+.panel-numero-uno p,
+.panel-numero-uno li{
+    line-height: 1.3em;
 }
 
-.panel1 p,
-.panel2 p {
-    color: #202020;
-    text-align: left;
-    word-wrap: normal;
-    font-size: 20px;
-    font-family: sans-serif;
-    font-size: 18px;
+
+.panel-numero-uno .poster {
+    height: 500px;
+    float: right;
+    border: 1px solid #dcdcdc;
+    margin-left: 2em;
 }
-.panel1 li,
-.panel2 li {
-    font-family: sans-serif;
+
+@media (min-width: 400px) {
+    .panel-numero-uno {
+        height: auto;
+    }
+    .panel-numero-uno img {
+        height: 500px;
+    }
+}
+/* Recent PRs */
+.recent-pr {
+    margin-top: 5em;
+}
+.pull-request {
+  margin: auto;
+  padding: 1em;
+  position: relative;
+  height: 100px;
+  border-top: 1px solid #dcdcdc;
+}
+.pull-request h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #000;
+}
+.pull-request a {
+    text-decoration: none;
+    color: #000;
+}
+.pull-request p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.mergestatus {
+    float: right;
+    height: 25px !important;
+    width: auto !important;
+    border: none !important;
+}
+.avatar {
+  height: 70px !important;
+  margin-top: 15px;
+  margin-left: 0 !important;
+  margin-right: 1em;
+  width: auto;
+  border-radius: 50%;
+  border: 1px solid #dcdcdc;
+  float: left !important;
+}
+.pull-request:last-child {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* Some other formatting idk */
+hr {
+    color: #dcdcdc;
+    width: 80%;
+}
+
+p,
+li {
+    font-size: 1.1em;
+    font-family: 'Source Sans Pro';
+}
+
+/* Small copyright notice at the bottom */
+#copyright {
+    margin-top: 10px;
+}
+
+#copyright p {
+    color: #fff;
+    font-size: 1em;
 }
