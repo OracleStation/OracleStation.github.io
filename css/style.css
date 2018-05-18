@@ -191,6 +191,9 @@ nav a:hover {
     margin-left: 2em;
 }
 
+.info {
+    height: 500px;
+}
 @media (min-width: 400px) {
     .panel-numero-uno {
         height: auto;
